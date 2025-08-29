@@ -1,0 +1,4 @@
+- Orders must not exceed available credit (credit_limit - outstanding_balance).
+- If risk_rating is High and order_amount > 10% of credit_limit, escalate.
+- Enterprise segment may exceed by up to 5% with manager approval (escalate).
+- ...

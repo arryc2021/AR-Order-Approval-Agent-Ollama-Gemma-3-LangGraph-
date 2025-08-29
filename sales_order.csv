@@ -1,0 +1,2 @@
+order_id,customer_id,order_amount,currency,order_date,requested_terms,sales_rep
+SO-1001,C001,15000,USD,2025-08-25,Net30,alice@company.com

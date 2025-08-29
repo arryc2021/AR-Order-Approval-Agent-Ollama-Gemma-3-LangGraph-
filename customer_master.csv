@@ -1,0 +1,2 @@
+customer_id,customer_name,credit_limit,outstanding_balance,payment_terms,segment,risk_rating
+C001,Acme Corp,50000,12000,Net30,Enterprise,Medium
