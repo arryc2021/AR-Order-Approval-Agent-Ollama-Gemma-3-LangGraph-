@@ -1,4 +1,4 @@
-# 📊 AR Order Approval Agent (Ollama + Gemma 3 + LangGraph)
+#  AR Order Approval Agent (Ollama + Gemma 3 + LangGraph)
 
 This project implements an **AI-powered Accounts Receivable (AR) workflow** that automates sales order approval decisions based on customer creditworthiness and company policy.
 
@@ -9,7 +9,7 @@ It uses:
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 - Automate AR checks for sales orders against customer credit limits and company policy.  
 - Leverage **Gemma 3** for nuanced reasoning about credit risk.  
 - Provide **traceability** with logs and decision outputs.  
@@ -17,7 +17,7 @@ It uses:
 
 ---
 
-## 📥 Inputs
+##  Inputs
 
 ### 1. `customer_master.csv`
 ```csv
@@ -40,7 +40,7 @@ SO-1001,C001,15000,USD,2025-08-25,Net30,alice@company.com
 
 ---
 
-## 📤 Outputs
+##  Outputs
 
 ### 1. Decisions CSV
 **`ar_decisions_<timestamp>.csv`**
@@ -63,9 +63,11 @@ A reviewer can open this file, add a `human_note` and finalize the decision.
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
+<img width="975" height="975" alt="image" src="https://github.com/user-attachments/assets/59222b43-9b4f-4756-91e7-1926538af0e8" />
+
 ar-order-approval-agent/
 ├── ar_agent.py           # main workflow (LangGraph + Ollama + Gemma 3)
 ├── customer_master.csv   # sample input (customers)
@@ -78,7 +80,7 @@ ar-order-approval-agent/
 
 ---
 
-## 📦 Requirements
+##  Requirements
 
 ```
 langchain>=0.2.0
@@ -116,7 +118,7 @@ python ar_agent.py   --customer_csv customer_master.csv   --orders_csv sales_ord
 
 ---
 
-## 👩‍💼 Human-in-the-Loop
+##  Human-in-the-Loop
 
 If an order cannot be auto-approved or rejected, it is escalated.  
 Two modes:
@@ -160,7 +162,7 @@ To evaluate and monitor the system:
 
 ---
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 - Streamlit / FastAPI dashboard for reviewer workflow.  
 - Policy versioning (log hash of CreditPolicy.txt with each decision).  
 - Multi-currency handling with FX normalization.  
